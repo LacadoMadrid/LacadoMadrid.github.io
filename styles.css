@@ -1,0 +1,582 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    text-align: center;
+    padding-top: 50px; /* Adjust according to navbar height */
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+/* Fixed Header CSS */
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: -4.5%;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -999;
+}
+
+
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.hero-h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+}
+
+.hero-p {
+    font-size: 1.25rem;
+    margin-bottom: 1em;
+}
+
+.home-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.cta {
+    padding: 10px 180px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Navbar */
+.navbar-custom {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 10px;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 999;
+}
+
+/* Brand/logo style */
+.navbar-brand {
+    margin-right: 30%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Nav Links */
+.navbar-nav {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+color: rgb(216, 216, 216);
+text-decoration: underline;
+transition: all.3s;
+}
+
+.navbar-custom.scrolled .nav-link:hover {
+    color: rgb(139, 139, 139);
+}
+
+
+/* Scroll effect class */
+.navbar-custom.scrolled {
+    background-color: rgb(211, 211, 211);
+}
+
+/* Change logo and link colors on scroll */
+.navbar-custom.scrolled .navbar-brand,
+.navbar-custom.scrolled .nav-link {
+    color: black;
+}
+
+
+
+section {
+    padding: 4rem 2rem;
+}
+
+hr {
+    width: 70%;
+    margin-left: 15%;
+}
+
+.about {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.about-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.aboutimg {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1 / 1; /* Makes it square: width = height */
+    object-fit: cover;
+    margin: 25px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s, filter 0.3s;
+    cursor: pointer;
+}
+
+.product-gallery, .post-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.product-item, .post-item {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    transition: transform 0.3s;
+}
+
+.product-item img, .post-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.aboutimg:hover {
+    transform: scale(1.1);
+    filter: brightness(80%);
+    transition: .3s;
+}
+
+.product-item:hover, .post-item:hover {
+    transform: translateY(-10px);
+}
+
+.post-item .read-more {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: color 0.3s;
+}
+
+.post-item .read-more:hover {
+    color: #ffcc00;
+}
+
+.product-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 3.3%;
+    padding: 0;
+}
+  
+  .product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .product-item div {
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+
+/* RAL 9010 - Pure White / Blanco Puro */
+.color-ral-9010 {
+    background-color: #F6F6F6;
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  /* RAL 9005 - Jet Black / Negro Intenso */
+  .color-ral-9005 {
+    background-color: #0A0A0A;
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  /* RAL 7016 - Anthracite Grey / Gris Antracita */
+  .color-ral-7016 {
+    background-color: #383E42;
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  /* RAL 7035 - Light Grey / Gris Claro */
+  .color-ral-7035 {
+    background-color: #D7D7D7;
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  /* RAL 3020 - Traffic Red / Rojo Tráfico */
+  .color-ral-3020 {
+    background-color: #C51D34;
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  /* RAL 5010 - Gentian Blue / Azul Genciana */
+  .color-ral-5010 {
+    background-color: #0E294B;
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  /* RAL 6005 - Moss Green / Verde Musgo */
+  .color-ral-6005 {
+    background-color: #0A4239;
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  /* RAL 7037 - Dusty Grey / Gris Polvoriento */
+  .color-ral-7037 {
+    background-color: #7D7F7D;
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  /* RAL 8017 - Chocolate Brown / Marrón Chocolate */
+  .color-ral-8017 {
+    background-color: #4C2F27;
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  /* RAL 1015 - Light Ivory / Marfil Claro */
+  .color-ral-1015 {
+    background-color: #E6D690;
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  /* RAL 3000 - Flame Red / Rojo Llama */
+  .color-ral-3000 {
+    background-color: #AF2B1E;
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  /* RAL 6011 - Reseda Green / Verde Reseda */
+  .color-ral-6011 {
+    background-color: #6C7156;
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  /* RAL 5012 - Light Blue / Azul Claro */
+  .color-ral-5012 {
+    background-color: #3183A0;
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  /* RAL 9006 - White Aluminium / Aluminio Blanco */
+  .color-ral-9006 {
+    background-color: #A5A5A5;
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  /* RAL 7040 - Window Grey / Gris Ventana */
+  .color-ral-7040 {
+    background-color: #9DA1AA;
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  /* RAL 7032 - Pebble Grey / Gris Guijarro */
+  .color-ral-7032 {
+    background-color: #B8B799;
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .form-item2 {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.form-item2 input {
+    display: block;
+    width: 400px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ccc;
+    transition: all .3s;
+    padding: 0 15px;
+}
+
+.form-item2 input:focus {
+    border-color: blue;
+}
+
+.form-item2 label {
+    position: absolute;
+    cursor: text;
+    z-index: 2;
+    top: 13px;
+    left: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    background: #fff;
+    padding: 0 10px;
+    color: #999;
+    transition: all .3s ease;
+}
+
+.form-item2 input:focus + label,
+.form-item2 input:valid + label {
+    font-size: 11px;
+    top: -5px;
+}
+
+.form-item2 input:focus + label {
+    color: blue;
+}
+
+.contact {
+    padding: 30px;
+    text-align: center;
+}
+
+.contacth3 {
+    margin-bottom: 10px;
+}
+
+.contacth3 h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.map-content {
+    width: 100%; /* Take up full width */
+    max-width: 600px; /* Limit maximum width */
+    margin-bottom: 20px; /* Space below the map */
+}
+
+.map-content iframe {
+    max-width: 600px;
+    height: 500px; /* Adjust height as needed */
+    border-radius: 25px;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+ a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.contact-info {
+    text-align: left;
+    margin-top: 50px;
+}
+.contact-info div {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info ion-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.linkofcont {
+    color: #551A8B;
+}
+
+.linkofcont:hover {
+    color: gray;
+}
+
+.Icons {
+    color: black;
+    opacity: 1;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #666;
+}
+
+.contact-info p:last-child {
+    margin-bottom: 0;
+}
+
+.booktable {
+    margin-top: -34%;
+    margin-left: 50%;
+}
+
+.booktablebtn {
+    display: inline-block;
+    padding: 8px 10px;
+    background-color: #eeb61a;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booktablebtn:hover {
+    background-color: #555;
+}
+
+#bookTableForm {
+    margin-top: 0.05%;
+    margin-left: -8%;
+}
+
+/* Botón de volver arriba */
+.back-to-top {
+    position: fixed;
+    bottom: 30px; /* Lo subimos para no chocar con el chat */
+    right: 20px;
+    z-index: 999;
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+
+/* Mostrar botón cuando haga scroll */
+.back-to-top.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Efecto hover */
+.back-to-top:hover {
+    background-color: #d44124; /* Color más oscuro al pasar el mouse */
+}
+
+/* Ajustar el tamaño del icono */
+.back-to-top ion-icon {
+    font-size: 24px;
+}
