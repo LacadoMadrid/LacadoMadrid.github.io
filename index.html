@@ -99,10 +99,29 @@
 }
 
 .navbar-links {
-  display: flex;
-  list-style: none;
-  gap: 20px;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: #444;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease-in-out;
 }
+
+/* When menu is toggled open */
+.navbar-links.show {
+  max-height: 300px; /* Adjust based on how many links you have */
+}
+
+.navbar-links li {
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+}
+
 
 .navbar-links .nav-link {
   color: white;
