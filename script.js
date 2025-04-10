@@ -63,3 +63,10 @@ function confirmCall() {
         window.location.href = "tel:+34627560307";
     }
 }
+
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('nav-links');
+
+  burger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
