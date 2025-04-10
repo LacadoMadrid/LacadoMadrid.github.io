@@ -624,6 +624,10 @@ h2 {
     width: 100%;
   }
 
+     .brand-text {
+    display: none;
+  }
+
   .nav-link {
     font-size: 1rem;
     padding: 8px 0;
@@ -693,4 +697,8 @@ h2 {
     right: 15px;
     padding: 10px;
   }
+}
+
+.brand-text {
+  display: inline;
 }
