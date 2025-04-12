@@ -64,23 +64,23 @@ function confirmCall() {
     }
 }
 
-  const burger = document.getElementById('burger');
-  const navLinks = document.getElementById('nav-links');
+  const burger = document.getElementById("burger");
+  const close = document.getElementById("close");
+  const navMenu = document.querySelector(".navbar-nav");
 
-  burger.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
+  // Inicialmente ocultar el botón "close"
+  close.style.display = "none";
+
+  // Función para mostrar menú
+  burger.addEventListener("click", () => {
+    navMenu.classList.add("show");
+    burger.style.display = "none";
+    close.style.display = "block";
   });
 
-
- const burgerIcon = document.getElementById("burger-icon");
-
-  burgerIcon.addEventListener("click", () => {
-    const isMenu = burgerIcon.getAttribute("name") === "menu-outline";
-    burgerIcon.setAttribute("name", isMenu ? "close-outline" : "menu-outline");
-
-    // Opcional: también mostrar u ocultar el menú si tienes uno
-    const navMenu = document.querySelector(".navbar-nav");
-    if (navMenu) {
-      navMenu.classList.toggle("show");
-    }
+  // Función para ocultar menú
+  close.addEventListener("click", () => {
+    navMenu.classList.remove("show");
+    close.style.display = "none";
+    burger.style.display = "block";
   });
