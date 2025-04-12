@@ -66,11 +66,13 @@
   width: 100%;
   color: white;
   display: flex;
-  justify-content: space-between; /* Pushes logo left, burger right */
+  flex-direction: row; /* asegúrate de que sea horizontal */
+  justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   z-index: 999;
   background-color: #333;
+  box-sizing: border-box;
 }
 
 /* Logo image aligned to the left */
@@ -82,12 +84,11 @@
 
 /* Burger icon aligned to the right */
 .burger {
-  display: block;
   font-size: 30px;
   color: black;
   cursor: pointer;
+  display: block;
 }
-
 
   .navbar-nav {
     position: absolute;
