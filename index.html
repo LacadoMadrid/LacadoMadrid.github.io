@@ -62,33 +62,32 @@
 .navbar-custom {
   position: fixed;
   top: 0;
-  left: 0; /* Changed from right to left */
+  left: 0;
   width: 100%;
   color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Pushes logo left, burger right */
   align-items: center;
-  padding: 10px 20px; /* Add some spacing */
+  padding: 10px 20px;
   z-index: 999;
-  background-color: #333; /* Optional: visible background */
+  background-color: #333;
 }
 
-/* Logo image aligned left */
+/* Logo image aligned to the left */
 .home-logo {
   width: 40px;
   height: 40px;
-  margin-left: 0; /* Remove the negative margin */
   display: block;
 }
 
-/* Burger icon aligned right */
+/* Burger icon aligned to the right */
 .burger {
   display: block;
   font-size: 30px;
   color: black;
   cursor: pointer;
-  margin-right: 0;
 }
+
 
   .navbar-nav {
     position: absolute;
