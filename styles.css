@@ -233,7 +233,6 @@ hr {
 h2 {
     font-size: 2.5rem;
     color: #333;
-    justify-content: center;
 }
 
 .about p {
@@ -694,6 +693,10 @@ h2 {
     margin: 0;
     font-size: 1.5rem;
   }
+
+    h2 {
+     text-align: center;
+    }
 
   .navbar-nav {
     flex-direction: column;
