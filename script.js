@@ -1,14 +1,34 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Scroll suave para los enlaces internos
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
 
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
         });
+
+        // Cerrar el menú de navegación al hacer clic en un enlace
+        const navMenu = document.querySelector('.navbar-nav');
+        const close = document.getElementById("close");
+        const burger = document.getElementById("burger");
+
+        navMenu.classList.remove("show");
+        close.style.display = "none";
+        burger.style.display = "block";
+      });
     });
-});
+  });
+
+  // Cambiar el estilo de la barra de navegación al hacer scroll
+  window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar-custom');
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
 
 
 
@@ -42,17 +62,6 @@ document.getElementById('backToTop').addEventListener('click', function() {
         top: 0,
         behavior: 'smooth'
     });
-});
-
-
-
-window.addEventListener('scroll', function () {
-    const navbar = document.querySelector('.navbar-custom');
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
 });
 
 
