@@ -64,23 +64,9 @@ function confirmCall() {
     }
 }
 
-  const burger = document.getElementById("burger");
-  const close = document.getElementById("close");
-  const navMenu = document.querySelector(".navbar-nav");
+ const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('nav-links');
 
-  // Inicialmente ocultar el botón "close"
-  close.style.display = "none";
-
-  // Función para mostrar menú
-  burger.addEventListener("click", () => {
-    navMenu.classList.add("show");
-    burger.style.display = "none";
-    close.style.display = "block";
-  });
-
-  // Función para ocultar menú
-  close.addEventListener("click", () => {
-    navMenu.classList.remove("show");
-    close.style.display = "none";
-    burger.style.display = "block";
+  burger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
   });
