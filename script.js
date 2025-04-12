@@ -70,3 +70,17 @@ function confirmCall() {
   burger.addEventListener('click', () => {
     navLinks.classList.toggle('show');
   });
+
+
+ const burgerIcon = document.getElementById("burger-icon");
+
+  burgerIcon.addEventListener("click", () => {
+    const isMenu = burgerIcon.getAttribute("name") === "menu-outline";
+    burgerIcon.setAttribute("name", isMenu ? "close-outline" : "menu-outline");
+
+    // Opcional: también mostrar u ocultar el menú si tienes uno
+    const navMenu = document.querySelector(".navbar-nav");
+    if (navMenu) {
+      navMenu.classList.toggle("show");
+    }
+  });
