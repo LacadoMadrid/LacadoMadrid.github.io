@@ -77,16 +77,34 @@
       }
 
       @media (max-width: 768px) {
-  .burger {
-    display: inline;
-    color: black;
-    font-size: 18px;
-  }
+.navbar-custom {
+  position: fixed;
+  top: 0;
+  left: 0; /* Changed from right to left */
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Add some spacing */
+  z-index: 999;
+  background-color: #333; /* Optional: visible background */
+}
 
+/* Logo image aligned left */
 .home-logo {
-  display: inline;
-  float: left;
-  margin-left: 5%;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+
+/* Burger icon aligned right */
+.burger {
+  font-size: 30px; /* Make it bigger */
+  color: black;     /* Black icon */
+  cursor: pointer;
+  margin-right: 20px;
+  display: none; /* Hidden by default, shown on mobile */
 }
 
   .navbar-nav {
