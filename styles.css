@@ -506,10 +506,11 @@ h2 {
     margin-bottom: 0;
 }
 
-.booktable {
-    margin-top: -34%;
-    margin-left: 50%;
-}
+  .booktable {
+    position: static;
+    margin: 20px auto;
+    text-align: center;
+  }
 
 .booktablebtn {
     display: inline-block;
@@ -672,7 +673,7 @@ h2 {
     width: 90%;
   }
 
-/*   .booktable {
+  .booktable {
     position: static;
     margin: 20px auto;
     text-align: center;
@@ -680,7 +681,7 @@ h2 {
 
   #bookTableForm {
     margin-left: 0;
-  } */
+  }
 
   .back-to-top {
     bottom: 20px;
