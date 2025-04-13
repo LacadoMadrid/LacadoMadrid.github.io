@@ -529,8 +529,8 @@ h2 {
 }
 
 #bookTableForm {
-    margin-top: 0.05%;
-    margin-left: 35%;
+    right: 5%;
+    float: right;
 }
 
 /* Botón de volver arriba */
