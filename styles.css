@@ -506,11 +506,10 @@ h2 {
     margin-bottom: 0;
 }
 
-  .booktable {
-    position: relative;
-    margin: 100px auto;
-    text-align: center;
-  }
+.booktable {
+    margin-top: -34%;
+    margin-left: 50%;
+}
 
 .booktablebtn {
     display: inline-block;
@@ -529,8 +528,8 @@ h2 {
 }
 
 #bookTableForm {
-    right: 5%;
-    float: right;
+    margin-top: 0.05%;
+    margin-left: -8%;
 }
 
 /* Botón de volver arriba */
