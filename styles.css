@@ -81,22 +81,12 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 20px 10px;
+    padding: 20px 20px;
     
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     z-index: 999;
-}
-
-/* Brand/logo style */
-.navbar-brand {
-    margin-right: 30%;
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
 }
 
 /* Nav Links */
