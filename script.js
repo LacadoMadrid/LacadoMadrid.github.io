@@ -32,6 +32,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+document.addEventListener('DOMContentLoaded', () => {
+  const burger = document.getElementById('burger');
+
+  function toggleBurgerDisplay() {
+    if (window.innerWidth <= 768) {
+      burger.style.display = 'block';
+    } else {
+      burger.style.display = 'none';
+    }
+  }
+
+  toggleBurgerDisplay(); // Run on page load
+
+  window.addEventListener('resize', toggleBurgerDisplay); // Run on resize
+});
+
+
+
+
 document.querySelectorAll('.read-more').forEach(button => {
     button.addEventListener('click', function(event) {
         event.preventDefault();
