@@ -442,6 +442,7 @@ h2 {
 }
 
 .map-content {
+    float: right;
     width: 100%; /* Take up full width */
     max-width: 600px; /* Limit maximum width */
     margin-bottom: 20px; /* Space below the map */
