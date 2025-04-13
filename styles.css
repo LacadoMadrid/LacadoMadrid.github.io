@@ -672,7 +672,7 @@ h2 {
     width: 90%;
   }
 
-  .booktable {
+/*   .booktable {
     position: static;
     margin: 20px auto;
     text-align: center;
@@ -680,7 +680,7 @@ h2 {
 
   #bookTableForm {
     margin-left: 0;
-  }
+  } */
 
   .back-to-top {
     bottom: 20px;
