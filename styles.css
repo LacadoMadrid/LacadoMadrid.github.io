@@ -734,6 +734,10 @@ h2 {
   display: block;
 }
 
+    .burger {
+        display: block;
+    }
+
   .navbar-nav {
     position: absolute;
     top: 60px;
