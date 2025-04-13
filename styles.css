@@ -81,9 +81,9 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 20px 10px; 
+    padding: 20px 10px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between; /* Changed to space-between for better control */
     align-items: center;
     z-index: 999;
 }
