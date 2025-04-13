@@ -507,7 +507,7 @@ h2 {
 }
 
   .booktable {
-    position: static;
+    position: relative;
     margin: 100px auto;
     text-align: center;
   }
@@ -530,7 +530,7 @@ h2 {
 
 #bookTableForm {
     margin-top: 0.05%;
-    margin-left: 8%;
+    margin-left: 35%;
 }
 
 /* Botón de volver arriba */
